@@ -54,14 +54,14 @@ function HistoryTable(props) {
     });
 
     return (
-        <div id="Transaction_table" style={{ height: '80%', width: '80%' }}>
+        <div id="Transaction_table" style={{ height: '90%', width: '87.7%' }}>
         <DataGrid
             columns={[
             { field: 'Date', hideable: false, width: 200 },
-            { field: 'Memo', width: 300 , headerAlign: 'center', align: 'center'},
-            { field: 'Transaction_ID', width: 1000, headerName: 'Transaction - ID'},
-            { field: 'Amount', width: 200 },
-            { field: 'sent_received', width: 200, headerName: 'Sent/Received'}
+            { field: 'Memo', width: 200 , headerAlign: 'center', align: 'center'},
+            { field: 'Transaction_ID', width: 800, headerName: 'Transaction - ID'},
+            { field: 'Amount', width: 150 },
+            { field: 'sent_received', width: 180, headerName: 'Sent/Received'}
             ]}
             rows={list}
             slots={{

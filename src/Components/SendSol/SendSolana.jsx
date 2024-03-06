@@ -106,7 +106,7 @@ function SendSolana() {
                     </FormControl>
                 </div>
                 <div id="btnsend">
-                <Button  variant="contained" endIcon={<SendIcon />} onClick={onClick} disabled={!publicKey || !isValid || toInfo[0].length===0 || toInfo[1].length===0} style={{marginLeft: 8}}>
+                <Button  variant="contained" fullWidth={true}  endIcon={<SendIcon />} onClick={onClick} disabled={!publicKey || !isValid || toInfo[0].length===0 || toInfo[1].length===0} style={{marginLeft: 8}}>
                 Send SOL
                 </Button>
                 </div>

@@ -86,7 +86,7 @@ code {
   margin-top: -50px;
 }
 #btncreate{
-  padding: 5px;
+   padding: 25px;
    display: flex;
    justify-content: center; 
   }
@@ -100,39 +100,40 @@ code {
     justify-content: center;
   }
   #input3{
-    padding: 5px ;
+    padding-top: 30px;
     display: flex;
     width: 510px;
-    margin-left:-5px;
     justify-content: center;
   }
   #publickey{
-    padding-top: 30px;
+    padding-top: 45px;
     /* padding: 7px; */
     display: flex;
     justify-content: center;
   }
   #btnsend{
-    padding: 5px;
+    padding-top: 20px;
     display: flex;
     margin-top: 4%;
     justify-content: center; 
+    width: 510px;
+    height: 50px;
    }
   #accept{
     padding: 5px;
     margin-left: 40%;
-    height: 40%;
+    height: 36%;
     width: 500px;
     border: 2px solid red;
     display: flex;
-    margin-top: -830px;
+    margin-top: -780px;
     margin-left: 800px;
     justify-content: center
   }
    #send{
     padding: 5px;
     margin-left: 40%;
-    height: 40%;
+    height: 36%;
     border: 2px solid red;
     width: 600px;
     /* position: relative; */
@@ -144,20 +145,25 @@ code {
   #qr-code{
     display: flex;
     justify-content: center;
+    margin-top: -700px;
+    margin-left: 250px;
     border-radius: 30%;
   }
   #listItems{
     border: 2px solid red;
     max-height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
-    height: 90%;
+    height: 90.5%;
     width: fit-content;
   }
   #Transaction_table{
     border: 2px solid red;
-    /* position: ; */
-    margin-top: -925px;
-    margin-left: 310px;
+    padding-top: 0%;
+    margin-top: -51%;
+    position: relative;
+    float: right;
+    /* margin-top: -900px;
+    margin-left: 310px; */
   }
   #List{
     
