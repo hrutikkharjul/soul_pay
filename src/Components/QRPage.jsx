@@ -7,9 +7,9 @@ function QRPage() {
     const [showQR, setShowQR] = useState(false);
     return (
         // showQR?<QRDisplay paymentInfo={paymentInfo} setShowQR={setShowQR} />:<Input setPaymentInfo={setPaymentInfo} setShowQR={setShowQR} showQR={showQR}/>
-        <>
+        <div id='accept_outer'>
         <Input setPaymentInfo={setPaymentInfo} setShowQR={setShowQR} showQR={showQR} paymentInfo={paymentInfo}/>
-        </>
+        </div>
     )
 }
 

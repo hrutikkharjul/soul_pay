@@ -120,51 +120,68 @@ code {
     height: 50px;
    }
   #accept{
-    padding: 5px;
-    margin-left: 40%;
-    height: 36%;
-    width: 500px;
-    border: 2px solid red;
+    width: auto;
+    min-width: 500px;
     display: flex;
-    margin-top: -780px;
-    margin-left: 800px;
-    justify-content: center
+    justify-content: center;
+    border: 2px solid red;
   }
    #send{
     padding: 5px;
-    margin-left: 40%;
+    /* margin-left: 40%; */
     height: 36%;
     border: 2px solid red;
     width: 600px;
+    min-height: 366px;
     /* position: relative; */
-    margin-top: -800px;
+    /* margin-top: -800px; */
     background-color: rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+  #outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid pink;
+    height: 100%;
+    width: 100%;
   }
   #qr-code{
     display: flex;
     justify-content: center;
-    margin-top: -700px;
-    margin-left: 250px;
     border-radius: 30%;
+    position: absolute;
+    top: 250;
+    left: 800;
   }
   #listItems{
     border: 2px solid red;
-    max-height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
-    height: 90.5%;
+    height: auto;
     width: fit-content;
+    min-width: 230px;
   }
   #Transaction_table{
     border: 2px solid red;
-    padding-top: 0%;
-    margin-top: -51%;
+    /* padding-top: 0%; */
+    /* margin-top: -51%; */
     position: relative;
     float: right;
     /* margin-top: -900px;
     margin-left: 310px; */
   }
-  #List{
-    
+  #body_container {
+    display: flex;
+    height: 90.7%;
+    border: 2px solid black;
   }
+ #accept_outer {
+  height: 100%;
+  width: 100%;
+  border: 3px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }

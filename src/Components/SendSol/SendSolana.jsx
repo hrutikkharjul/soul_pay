@@ -5,6 +5,7 @@ import { WalletNotConnectedError } from "@solana/wallet-adapter-base";
 import { Box, TextField, FormControl, InputLabel, OutlinedInput, InputAdornment, Button } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import BigNumber from 'bignumber.js';
+import { Height } from "@mui/icons-material";
 
 function SendSolana() {
     // const { connection } = useConnection();
@@ -88,7 +89,7 @@ function SendSolana() {
     }
 
     return(
-        <>  
+        <div id='outer'>   
          <div id='send'>
              <Box sx={{ width: '100%', maxWidth: 500,  borderRadius: 3}}>  
                    <div id="publicKey">
@@ -112,7 +113,7 @@ function SendSolana() {
                 </div>
             </Box>
         </div>
-        </>
+        </div>
         );
 }
 

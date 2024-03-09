@@ -8,10 +8,10 @@ function Home() {
     const [pageNo, setPageNo] = useState(0);
 
     return (
-        <>  
+        <div id="body_container">  
             <SelectedListItem setPageNo={setPageNo} />
             {pageNo===0?<QRPage />: pageNo===1?<TransactionHistory />: <SendSolana/>}
-        </>
+        </div>
     )
 
 }

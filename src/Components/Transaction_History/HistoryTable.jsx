@@ -54,7 +54,7 @@ function HistoryTable(props) {
     });
 
     return (
-        <div id="Transaction_table" style={{ height: '90%', width: '87.7%' }}>
+        <div id="Transaction_table" style={{ height: '100%', width: '87.7%' }}>
         <DataGrid
             columns={[
             { field: 'Date', hideable: false, width: 200 },
