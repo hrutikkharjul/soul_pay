@@ -7,6 +7,7 @@ import ListItemText from '@mui/material/ListItemText';
 import SendIcon from '@mui/icons-material/Send';
 import QrCode2 from '@mui/icons-material/QrCode2';
 import ManageSearchIcon from '@mui/icons-material/ManageSearch';
+import { Info } from '@mui/icons-material';
 
 function SelectedListItem(props) {
 
@@ -52,11 +53,11 @@ function SelectedListItem(props) {
         </ListItemButton>
 
         <ListItemButton
-          selected={selectedIndex === 1}
+          selected={selectedIndex === 3}
           onClick={(event) => handleListItemClick(event, 3)}
         >
           <ListItemIcon>
-            <ManageSearchIcon />
+            <Info/>
           </ListItemIcon>
           <ListItemText primary="About us" />
         </ListItemButton>

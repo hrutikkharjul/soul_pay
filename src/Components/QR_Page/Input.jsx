@@ -122,7 +122,7 @@ function Input(props) {
             <div id='accept' >
             <Box sx={{ width: '100%', maxWidth: 500, backgroundColor: 'rgba(0, 0, 0, 0.2)', borderRadius: 3}}>
             <div id="input1">
-                <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
+                <FormControl sx={{ m: 1, width: '40ch' }} variant="outlined">
                  <OutlinedInput
                     id="outlined-adornment-weight"
                     value={amt}
@@ -139,7 +139,7 @@ function Input(props) {
                 </div>
             <br />
             <div id="input2">
-                <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
+                <FormControl sx={{ m: 1, width: '40ch' }} variant="outlined">
                     <OutlinedInput
                     id="outlined-adornment-weight"
                     value={memo1}

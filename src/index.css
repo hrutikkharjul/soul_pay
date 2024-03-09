@@ -10,8 +10,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 .btnConnect {
   padding-left: 45%;
@@ -34,7 +33,6 @@ code {
   /* justify-content: center; */
   height: 500px;
   margin-left: -150px;
-  border: 1px solid black;
   margin-top: -150px;
   border-radius:20px;
   background-color: #282C37;
@@ -65,8 +63,6 @@ code {
   mix-blend-mode: color-dodge;
 }
 #btns{
-  /* border: green 2px solid; */
-  /* display: block; */
   text-align: center;
 }
 #btndiscon{
@@ -86,7 +82,8 @@ code {
   margin-top: -50px;
 }
 #btncreate{
-   padding: 25px;
+   padding: 45px;
+   padding-top: 10px;
    display: flex;
    justify-content: center; 
   }
@@ -106,8 +103,7 @@ code {
     justify-content: center;
   }
   #publickey{
-    padding-top: 45px;
-    /* padding: 7px; */
+    padding-top: 10px;
     display: flex;
     justify-content: center;
   }
@@ -124,17 +120,13 @@ code {
     min-width: 500px;
     display: flex;
     justify-content: center;
-    border: 2px solid red;
   }
    #send{
     padding: 5px;
-    /* margin-left: 40%; */
     height: 36%;
-    border: 2px solid red;
     width: 600px;
     min-height: 366px;
-    /* position: relative; */
-    /* margin-top: -800px; */
+    border-radius: 1em;
     background-color: rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
@@ -144,7 +136,6 @@ code {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid pink;
     height: 100%;
     width: 100%;
   }
@@ -157,14 +148,13 @@ code {
     left: 800;
   }
   #listItems{
-    border: 2px solid red;
     background-color: rgba(0, 0, 0, 0.2);
-    height: auto;
+    height: 100%;
     width: fit-content;
     min-width: 230px;
+    border-right: 1px solid black;
   }
   #Transaction_table{
-    border: 2px solid red;
     /* padding-top: 0%; */
     /* margin-top: -51%; */
     position: relative;
@@ -175,13 +165,22 @@ code {
   #body_container {
     display: flex;
     height: 90.7%;
-    border: 2px solid black;
+    border-top: 1px solid black;
   }
  #accept_outer {
   height: 100%;
   width: 100%;
-  border: 3px solid green;
   display: flex;
   align-items: center;
   justify-content: center;
  }
+ #about_outer {
+  display: flex;
+  height: 98%;
+  width: 100%;
+  border: 10px solid green;
+ }
+ #about-us {
+  max-height: 99%;
+  flex: 2; /* Make both sections grow to fill the available space */
+}
