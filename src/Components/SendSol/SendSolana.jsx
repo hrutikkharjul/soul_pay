@@ -9,7 +9,7 @@ import { Height } from "@mui/icons-material";
 
 function SendSolana() {
     // const { connection } = useConnection();
-    const connection = new Connection(clusterApiUrl('devnet'));
+    const connection = new Connection(clusterApiUrl('testnet'));
     const { publicKey, sendTransaction } = useWallet();
     const [ toInfo, setToInfo] = useState(['','']);
     const [ isValid, setIsValid] = useState(true);

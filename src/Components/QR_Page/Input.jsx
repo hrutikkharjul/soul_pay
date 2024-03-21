@@ -10,7 +10,7 @@ import { clusterApiUrl, Connection, Keypair } from '@solana/web3.js';
 function Input(props) {
     const wallet = useWallet();
     const [amt, setAmt] = useState("");
-    const connection = new Connection(clusterApiUrl('devnet'), 'confirmed');
+    const connection = new Connection(clusterApiUrl('testnet'), 'confirmed');
     let signatureInfo;
     const [paymentStatus, setPaymentStatus] = useState('pending');
     const [memo1, setMemo] = useState("");
@@ -83,8 +83,14 @@ function Input(props) {
             *
             * You can implement a polling strategy to query for the transaction periodically.
             */
+           let i = 0;
            const interval = setInterval(async () => {
                console.count('Checking for transaction...');
+               ++i;
+               if (i>=120) {
+                clearInterval(interval);
+                console.log('timed out');
+               }
                try {
                     signatureInfo = await findReference(connection, paymentInfo.reference, { finality: 'confirmed' });
                     console.log('\n 🖌  Signature found: ', signatureInfo.signature);
@@ -97,7 +103,7 @@ function Input(props) {
                         reject(error);
                     }
                 }
-            }, 250);
+            }, 1000);
         }});
         setPaymentStatus('confirmed');
         try {

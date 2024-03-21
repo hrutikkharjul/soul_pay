@@ -15,7 +15,7 @@ function TransactionHistory() {
         maxSupportedTransactionVersion: 0,  
     };
 
-    const endpoint = 'https://api.devnet.solana.com';
+    const endpoint = 'https://api.testnet.solana.com/';
     const solanaConnection = new Connection(endpoint, "confirmed");
     const searchAddress = useWallet().publicKey;
     //console.log(searchAddress);
