@@ -20,9 +20,9 @@ function Input(props) {
             recipient: wallet.publicKey,
             reference: new Keypair().publicKey,
             amount : new BigNumber(amt),
-            label: 'Hrutik Industries',
-            message: 'Lets Go!',
-            memo: 'HK#'+ memo1
+            label: 'SoulPay Industries',
+            message: 'Proceed to payment!',
+            memo: 'SoulPay#'+ memo1
         };
         props.setPaymentInfo(paymentInfo);
         props.setShowQR(true);
